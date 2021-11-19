@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0 label;
+}
+
+header {
+  background-color: #1881ea;
+  width: 700px;
+  padding: 5px 0;
+}
+
+label {
+  font-size: 1.3rem;
+  display: inline-block;
+}
+
+form {
+  background-color: white;
+  width: 700px;
+}
+form > div {
+  background-color: #e1e1e1;
+  margin: 10px 0;
+}
+form > div select {
+  width: 270px;
+  height: 35px;
+  margin: 0 0 0 340px;
+  border-radius: 5px;
+}
+form .section1 {
+  background-color: #e1e1e1;
+  padding: 5px 0;
+}
+form .section1 input {
+  margin-left: 130px;
+  padding: 10px 60px;
+  border-radius: 5px;
+}
+form .section2 {
+  background-color: #e1e1e1;
+  margin: 10px 0;
+  padding: 0 0 5px 0;
+  text-align: center;
+}
+form .section2 > label {
+  margin: 10px 0 10px 0;
+}
+form .section2 div {
+  padding: 0 0 5px 0;
+}
+form .section3 {
+  background-color: #e1e1e1;
+  margin: 10px 0;
+  padding: 5px 0 10px 0;
+}
+form .section3 select {
+  width: 270px;
+  height: 35px;
+  margin: 0 0 0 265px;
+  border-radius: 5px;
+}
+form .section3 label {
+  margin: 10px 0 0 0;
+}
+form button {
+  width: 700px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: greenyellow;
+}
+form .section4 {
+  text-align: center;
+  background-color: #e1e1e1;
+  padding: 0 0 10px 0;
+}
+form .section4 h3 {
+  text-align: start;
+  background-color: #1881ea;
+  padding: 10px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

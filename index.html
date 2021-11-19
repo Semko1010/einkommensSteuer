@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h2>Einkommenssteuerrechner</h2>
+    </header>
+    <form onsubmit="return false">
+        <div>
+            <label for="">Jahr:</label>
+            <select name="" id="jahr">
+<option value="2021">2021</option>
+<option value="2020">2020</option>
+<option value="2019">2019</option>
+</select>
+        </div>
+        <section class="section1">
+            <label for="">zu versteuerndes Einkommen:</label>
+            <input placeholder="Jahresbruttogehalt" type="text" id="input">
+        </section>
+        <section class="section2">
+            <label for="">Art der Veranlagung</label>
+            <div>
+                <input checked="checked" type="radio" name="veranlagung" id="einzelVeranlagung">
+                <label for="">Einzelveranlagung</label>
+
+
+                <input type="radio" name="veranlagung" id="zusammendenVeranlagung">
+                <label for="">Zusammendenveranlagung</label>
+            </div>
+
+        </section>
+
+        <section class="section3">
+            <label for="">Kirchensteuer</label>
+            <select name="" id="kirchenSteuer">
+                <option value="0">Keine</option>
+                <option value="8%">8% (Bayern/BaWü)</option>
+                <option value="9%">9% (Übrige)</option>
+            </select>
+        </section>
+        <button onclick="berechnen()" class="btn">Berechnen</button>
+
+        <section class="section4">
+            <h3>Ergbebnis</h3>
+            <label for="">Einkommenssteuer</label>
+            <p id="einkommensSteuer">0</p>
+            <label for="">Kirchensteuer</label>
+            <p id="kirchensteuer">0</p>
+            <label for="">Gesamtbelastung</label>
+            <p id="gesamtbelastung">0</p>
+        </section>
+    </form>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

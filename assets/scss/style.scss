@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0 label {}
+}
+
+header {
+    background-color: rgb(24, 129, 234);
+    width: 700px;
+    padding: 5px 0;
+}
+
+label {
+    font-size: 1.3rem;
+    display: inline-block;
+}
+
+form {
+    background-color: white;
+    width: 700px;
+    >div {
+        background-color: rgb(225, 225, 225);
+        margin: 10px 0;
+        select {
+            width: 270px;
+            height: 35px;
+            margin: 0 0 0 340px;
+            border-radius: 5px;
+        }
+    }
+    .section1 {
+        background-color: rgb(225, 225, 225);
+        padding: 5px 0;
+        input {
+            margin-left: 130px;
+            padding: 10px 60px;
+            border-radius: 5px;
+        }
+    }
+    .section2 {
+        background-color: rgb(225, 225, 225);
+        margin: 10px 0;
+        padding: 0 0 5px 0;
+        text-align: center;
+        >label {
+            margin: 10px 0 10px 0;
+        }
+        div {
+            padding: 0 0 5px 0;
+        }
+    }
+    .section3 {
+        background-color: rgb(225, 225, 225);
+        margin: 10px 0;
+        padding: 5px 0 10px 0;
+        select {
+            width: 270px;
+            height: 35px;
+            margin: 0 0 0 265px;
+            border-radius: 5px;
+        }
+        label {
+            margin: 10px 0 0 0;
+        }
+    }
+    button {
+        width: 700px;
+        height: 50px;
+        border-radius: 5px;
+        background-color: greenyellow
+    }
+    .section4 {
+        text-align: center;
+        background-color: rgb(225, 225, 225);
+        padding: 0 0 10px 0;
+        h3 {
+            text-align: start;
+            background-color: rgb(24, 129, 234);
+            padding: 10px 0;
+        }
+    }
+}
