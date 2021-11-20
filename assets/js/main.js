@@ -98,6 +98,10 @@ const berechnen = function() {
             gesamtbelastung.innerHTML = est.toFixed(2) + " €";
         }
     }
+    if (zusammendenVeranlagung.checked) {
+        einkommensSteuer.innerHTML = (est = est / 2).toFixed(2) + " €";
+        gesamtbelastung.innerHTML = (est = est / 2).toFixed(2) + " €";
+    }
     if (kirchenSteuer.value == 8) {
         let kirch = est * 1.08;
         kirchensteuer.innerHTML = (kirch - est).toFixed(2) + " €";
@@ -110,8 +114,5 @@ const berechnen = function() {
         einkommensSteuer.innerHTML = est.toFixed(2) + " €";
         gesamtbelastung.innerHTML = (est * 1.09).toFixed(2) + " €";
     }
-    if (zusammendenVeranlagung.checked == true) {
-        einkommensSteuer.innerHTML = (est = est * 2).toFixed(2) + " €";
-        gesamtbelastung.innerHTML = (est = est * 2).toFixed(2) + " €";
-    }
+
 }
