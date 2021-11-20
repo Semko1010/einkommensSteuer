@@ -4,6 +4,7 @@ let kirchenSteuer = document.getElementById("kirchenSteuer");
 let einkommensSteuer = document.getElementById("einkommensSteuer");
 let kirchensteuer = document.getElementById("kirchensteuer");
 let gesamtbelastung = document.getElementById("gesamtbelastung");
+let zusammendenVeranlagung = document.getElementById("zusammendenVeranlagung");
 let est;
 
 const berechnen = function() {
@@ -36,8 +37,6 @@ const berechnen = function() {
             einkommensSteuer.innerHTML = est.toFixed(2) + " €";
             gesamtbelastung.innerHTML = est.toFixed(2) + " €";
         }
-
-
     }
     //##############################2020##################################
     if (jahr.value == 2020) {
@@ -110,5 +109,9 @@ const berechnen = function() {
         kirchensteuer.innerHTML = (kirch - est).toFixed(2) + " €";
         einkommensSteuer.innerHTML = est.toFixed(2) + " €";
         gesamtbelastung.innerHTML = (est * 1.09).toFixed(2) + " €";
+    }
+    if (zusammendenVeranlagung.checked == true) {
+        einkommensSteuer.innerHTML = (est = est * 2).toFixed(2) + " €";
+        gesamtbelastung.innerHTML = (est = est * 2).toFixed(2) + " €";
     }
 }
