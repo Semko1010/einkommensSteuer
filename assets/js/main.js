@@ -5,9 +5,13 @@ let einkommensSteuer = document.getElementById("einkommensSteuer");
 let kirchensteuer = document.getElementById("kirchensteuer");
 let gesamtbelastung = document.getElementById("gesamtbelastung");
 let zusammendenVeranlagung = document.getElementById("zusammendenVeranlagung");
+let section4 = document.querySelector(".section4");
 let est;
 
 const berechnen = function() {
+
+    section4.style.height = "35vh";
+    section4.style.opacity = 1;
     let incomeValue = incomeText.value;
     if (zusammendenVeranlagung.checked) {
         incomeValue = incomeValue / 2;

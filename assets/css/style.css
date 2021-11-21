@@ -1,6 +1,8 @@
 body {
-  margin: 0;
-  padding: 0 label;
+  margin: 0 auto;
+  padding: 0;
+  width: 700px;
+  border: 5px solid black;
 }
 
 header {
@@ -22,6 +24,9 @@ form > div {
   background-color: #e1e1e1;
   margin: 10px 0;
 }
+form > div label {
+  margin-left: 10px;
+}
 form > div select {
   width: 270px;
   height: 35px;
@@ -32,10 +37,14 @@ form .section1 {
   background-color: #e1e1e1;
   padding: 5px 0;
 }
+form .section1 label {
+  margin-left: 10px;
+}
 form .section1 input {
   margin-left: 130px;
-  padding: 10px 60px;
+  padding: 10px 63px;
   border-radius: 5px;
+  border: 2px solid yellowgreen;
 }
 form .section2 {
   background-color: #e1e1e1;
@@ -61,23 +70,38 @@ form .section3 select {
   border-radius: 5px;
 }
 form .section3 label {
-  margin: 10px 0 0 0;
+  margin: 10px 0 0 10px;
 }
 form button {
-  width: 700px;
+  width: 650px;
   height: 50px;
   border-radius: 5px;
   background-color: greenyellow;
+  margin-left: 25px;
+}
+form button:hover {
+  background-color: #99ff00;
+  cursor: pointer;
 }
 form .section4 {
+  height: 0;
+  opacity: 0;
+  transition: 1s ease;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  flex-direction: column;
   background-color: #e1e1e1;
   padding: 0 0 10px 0;
 }
-form .section4 h3 {
+form h3 {
+  width: 690px;
+  margin-bottom: 40px;
   text-align: start;
   background-color: #1881ea;
-  padding: 10px 0;
+  padding: 10px 0 10px 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,8 @@
 body {
-    margin: 0;
-    padding: 0 label {}
+    margin: 0 auto;
+    padding: 0;
+    width: 700px;
+    border: 5px solid black;
 }
 
 header {
@@ -20,6 +22,9 @@ form {
     >div {
         background-color: rgb(225, 225, 225);
         margin: 10px 0;
+        label {
+            margin-left: 10px;
+        }
         select {
             width: 270px;
             height: 35px;
@@ -30,10 +35,14 @@ form {
     .section1 {
         background-color: rgb(225, 225, 225);
         padding: 5px 0;
+        label {
+            margin-left: 10px;
+        }
         input {
             margin-left: 130px;
-            padding: 10px 60px;
+            padding: 10px 63px;
             border-radius: 5px;
+            border: 2px solid yellowgreen;
         }
     }
     .section2 {
@@ -59,23 +68,38 @@ form {
             border-radius: 5px;
         }
         label {
-            margin: 10px 0 0 0;
+            margin: 10px 0 0 10px;
         }
     }
     button {
-        width: 700px;
+        width: 650px;
         height: 50px;
         border-radius: 5px;
-        background-color: greenyellow
+        background-color: greenyellow;
+        margin-left: 25px;
+        &:hover {
+            background-color: rgb(153, 255, 0);
+            cursor: pointer;
+        }
     }
     .section4 {
+        height: 0;
+        opacity: 0;
+        transition: 1s ease;
+        width: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        flex-direction: column;
         background-color: rgb(225, 225, 225);
         padding: 0 0 10px 0;
-        h3 {
-            text-align: start;
-            background-color: rgb(24, 129, 234);
-            padding: 10px 0;
-        }
+    }
+    h3 {
+        width: 690px;
+        margin-bottom: 40px;
+        text-align: start;
+        background-color: rgb(24, 129, 234);
+        padding: 10px 0 10px 10px;
     }
 }
