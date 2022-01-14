@@ -1,53 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
 body {
     margin: 0 auto;
     padding: 0;
-    width: 700px;
-    border: 5px solid black;
+    width: 100vw;
+    font-family: 'IM Fell English SC', serif;
 }
-
+main{
+    overflow: hidden;
+    
+}
+h2{
+    font-size: 1.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
 header {
     background-color: rgb(24, 129, 234);
-    width: 700px;
+    overflow: hidden;
     padding: 5px 0;
+   
 }
-
+p{
+    font-size: 24px;
+    margin:3px 0;
+}
 label {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     display: inline-block;
 }
 
 form {
+    
     background-color: white;
-    width: 700px;
-    >div {
-        background-color: rgb(225, 225, 225);
+    width: 100vw;
+    background: url(../img//markus-winkler-IrRbSND5EUc-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .jahrSelect {
+        display:flex;
+        justify-content:space-between;
+        background-color: rgb(225, 225, 225,0.5);
         margin: 10px 0;
+        width:100vw;
         label {
             margin-left: 10px;
         }
         select {
-            width: 270px;
-            height: 35px;
-            margin: 0 0 0 340px;
+            width: 40vw;
+            height: 50px;
+            margin: 0 10vw 0 0px;
             border-radius: 5px;
+            border: 2px solid rgb(123, 123, 123);
+            font-family: 'IM Fell English SC', serif;
+            font-size: 1.5rem;
         }
     }
     .section1 {
-        background-color: rgb(225, 225, 225);
+        
+        background-color: rgb(225, 225, 225,0.8);
         padding: 5px 0;
+        width:100vw;
+        display: flex;
+        justify-content: space-between;
         label {
             margin-left: 10px;
         }
         input {
-            margin-left: 130px;
-            padding: 10px 63px;
+            margin: 0 10vw 0 0;
+            width: 31vw;
+            padding: 20px 63px;
             border-radius: 5px;
-            border: 2px solid yellowgreen;
+            border: 2px solid rgb(123, 123, 123);
         }
     }
     .section2 {
-        background-color: rgb(225, 225, 225);
+        background-color: rgb(225, 225, 225,0.8);
         margin: 10px 0;
+        width:100vw;
         padding: 0 0 5px 0;
         text-align: center;
         >label {
@@ -58,48 +90,195 @@ form {
         }
     }
     .section3 {
-        background-color: rgb(225, 225, 225);
+        display: flex;justify-content: space-between;
+        background-color: rgb(225, 225, 225,0.8);
         margin: 10px 0;
         padding: 5px 0 10px 0;
+        width:100vw;
         select {
-            width: 270px;
-            height: 35px;
-            margin: 0 0 0 265px;
+            width: 40vw;
+            height: 50px;
+            margin: 0 10vw 0 0;
             border-radius: 5px;
+            border: 2px solid rgb(123, 123, 123);
+            font-family: 'IM Fell English SC', serif;
+            font-size: 1.5rem;
         }
         label {
             margin: 10px 0 0 10px;
         }
     }
-    button {
-        width: 650px;
-        height: 50px;
-        border-radius: 5px;
-        background-color: greenyellow;
-        margin-left: 25px;
-        &:hover {
-            background-color: rgb(153, 255, 0);
-            cursor: pointer;
+    .sectionBtn{
+        text-align: center;
+        width:100vw;
+        background-color: rgb(225, 225, 225,0.8);
+        button {
+            width: 40vw;
+            height: 50px;
+            border-radius: 5px;
+            background-color: greenyellow;
+            font-family: 'IM Fell English SC', serif;
+            font-size: 1.3rem;
+            &:hover {
+                background-color: rgb(153, 255, 0);
+                cursor: pointer;
+            }
         }
     }
+    
     .section4 {
-        height: 0;
         opacity: 0;
         transition: 1s ease;
-        width: 700px;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         flex-direction: column;
-        background-color: rgb(225, 225, 225);
+        background-color: rgb(225, 225, 225,0.8);
         padding: 0 0 10px 0;
     }
     h3 {
-        width: 690px;
+        width: 100vw;
         margin-bottom: 40px;
         text-align: start;
         background-color: rgb(24, 129, 234);
         padding: 10px 0 10px 10px;
     }
 }
+
+@media (max-width: 768px) {
+    #input {
+        margin: 0 10vw 0 0;
+        width: 23vw;
+        padding: 20px 63px;
+        border-radius: 5px;
+        border: 2px solid rgb(123, 123, 123);
+    }
+  }
+@media (max-width: 375px) {
+    header {
+        text-align:center;
+        background-color: rgb(24, 129, 234);
+        overflow: hidden;
+        padding: 5px 0;
+    }
+    
+    label {
+        font-size: 1.3rem;
+        display: inline-block;
+    }
+    
+    form {
+        background-color: white;
+        width: 700px;
+        .jahrSelect {
+            display:flex;
+            justify-content:space-between;
+            background-color: rgb(225, 225, 225,0.8);
+            margin: 10px 0;
+            width:100vw;
+            label {
+                margin-left: 10px;
+            }
+            select {
+                width: 40vw;
+                height: 50px;
+                margin: 0 8vw 0 0px;
+                border-radius: 5px;
+                border: 2px solid rgb(123, 123, 123);
+                font-family: 'IM Fell English SC', serif;
+                font-size: 1.5rem;
+            }
+        }
+        .section1 {
+            background-color: rgb(225, 225, 225,0.8);
+            padding: 5px 0;
+            width:100vw;
+            display: flex;
+            justify-content: space-between;
+            label {
+                margin-left: 10px;
+            }
+            #input {
+                margin: 0 8vw 0 0;
+                width: 31vw;
+                padding: 1px 15px;
+                border-radius: 5px;
+                border: 2px solid rgb(123, 123, 123);
+            }
+        }
+        .section2 {
+            background-color: rgb(225, 225, 225,0.8);
+            margin: 10px 0;
+            width:100vw;
+            padding: 0 0 5px 0;
+            text-align: center;
+            >label {
+                margin: 10px 0 10px 0;
+            }
+            div {
+                padding: 0 0 5px 0;
+            }
+        }
+        .section3 {
+            display: flex;justify-content: space-between;
+            background-color: rgb(225, 225, 225,0.8);
+            margin: 10px 0;
+            padding: 5px 0 10px 0;
+            width:100vw;
+            select {
+                width: 40vw;
+                height: 50px;
+                margin: 0 10vw 0 0;
+                border-radius: 5px;
+                border: 2px solid rgb(123, 123, 123);
+                font-family: 'IM Fell English SC', serif;
+                font-size: 1.5rem;
+            }
+            label {
+                margin: 10px 0 0 10px;
+            }
+        }
+        .sectionBtn{
+            text-align: center;
+            width:100vw;
+            background-color: rgb(225, 225, 225,0.8);
+         
+            button {
+                width: 40vw;
+                height: 50px;
+                border-radius: 5px;
+                background-color: greenyellow;
+                
+                &:hover {
+                    background-color: rgb(153, 255, 0);
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        .section4 {
+            opacity: 0;
+            transition: 1s ease;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            background-color: rgb(225, 225, 225,0.8);
+            padding: 0 0px 30px 0;
+        }
+        p{
+            padding: 2px 0;
+        }
+        h3 {
+            width: 100vw;
+            margin-bottom: 40px;
+            text-align: start;
+            background-color: rgb(24, 129, 234);
+            padding: 10px 0 10px 10px;
+        }
+    }
+  }

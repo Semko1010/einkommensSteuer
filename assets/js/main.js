@@ -7,11 +7,18 @@ let gesamtbelastung = document.getElementById("gesamtbelastung");
 let zusammendenVeranlagung = document.getElementById("zusammendenVeranlagung");
 let section4 = document.querySelector(".section4");
 let est;
-
+let  mediaQ = window.matchMedia("(max-width: 375px)").matches;
 const berechnen = function() {
-
-    section4.style.height = "35vh";
-    section4.style.opacity = 1;
+    if (mediaQ) {
+        section4.style.height = "35vh";
+        section4.style.opacity = 1;
+        
+      } else{
+        section4.style.height = "45vh";
+        section4.style.opacity = 1;
+      }
+      
+    
     let incomeValue = incomeText.value;
     if (zusammendenVeranlagung.checked) {
         incomeValue = incomeValue / 2;

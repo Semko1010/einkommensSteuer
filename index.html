@@ -10,11 +10,12 @@
 </head>
 
 <body>
+    <main>
     <header>
         <h2>Einkommenssteuerrechner</h2>
     </header>
     <form onsubmit="return false">
-        <div>
+        <div class="jahrSelect">
             <label for="">Jahr:</label>
             <select name="" id="jahr">
 <option value="2021">2021</option>
@@ -47,8 +48,9 @@
                 <option value="9">9% (Übrige)</option>
             </select>
         </section>
+        <div class="sectionBtn">
         <button onclick="berechnen()" class="btn">Berechnen</button>
-
+        </div>
         <section class="section4">
             <h3>Ergbebnis</h3>
             <label for="">Einkommenssteuer</label>
@@ -59,6 +61,7 @@
             <p id="gesamtbelastung">0</p>
         </section>
     </form>
+</main>
     <script src="assets/js/main.js"></script>
 </body>
 
